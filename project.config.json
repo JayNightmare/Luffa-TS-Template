@@ -1,40 +1,45 @@
 {
-	"description": "项目配置文件。",
+	"description": "Project configuration file, which is used to configure the project information, compile and preview settings, etc.",
+	"packOptions": {
+		"ignore": []
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"projectname": "Project Name Here",
+	"scripts": {
+		"beforeCompile": "npm run compile",
+		"beforePreview": "npm run compile",
+		"beforeUpload": "npm run compile"
+	},
 	"setting": {
+		"newFeature": true,
 		"urlCheck": false,
 		"es6": true,
-		"postcss": true,
+		"postcss": false,
 		"minified": true,
-		"newFeature": true,
+		"remoteDebugLogEnable": false,
+		"uploadWithSourceMap": true,
 		"nodeModules": true,
 		"autoAudits": false,
-		"uploadWithSourceMap": true,
 		"uglifyFileName": true,
-		"remoteDebugLogEnable": true,
+		"useAlphaLib": true,
+		"scriptsEnable": true,
 		"prefetch": false
 	},
-	"compileType": "game",
-	"libVersion": "1.9.94",
-	"appid": "wx5dcb7161710465c8",
-	"projectname": "EncHackApp-01",
-	"LuffaToolsappid": "mpaf3t4krtwp8epc",
-	"scripts": {},
+	"appid": "App ID Here",
+	"tmfappid": "TMF App ID Here",
+	"LuffaToolsappid": "Luffa Tools App ID Here",
 	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"list": [
+				{
+					"name": "test",
+					"pathName": "test",
+					"query": "a=1&b=2",
+					"scene": 1001,
+					"envVersion": "develop"
+				}
+			]
 		}
 	}
 }
